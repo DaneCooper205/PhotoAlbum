@@ -65,5 +65,9 @@ public class Photo {
 		return "Photo [albumId=" + albumId + ", id=" + id + ", title=" + title + ", url=" + url + ", thumbnailUrl="
 				+ thumbnailUrl + "]";
 	}
+	
+	public String toConsoleResults() {
+		return "["+id+"] " + title;
+	}
 
 }
