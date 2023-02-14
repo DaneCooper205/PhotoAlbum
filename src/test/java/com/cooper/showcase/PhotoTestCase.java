@@ -26,4 +26,32 @@ class PhotoTestCase {
 
 	}
 
+	@Test
+	void testConstructor() {
+		Photo photo = new Photo(1,2,"Cat","urlString","ThumbnailUrl");
+		
+		assertEquals(2,photo.getId());
+		assertEquals(1,photo.getAlbumId());
+		assertEquals("Cat",photo.getTitle());
+		assertEquals("urlString",photo.getUrl());
+		assertEquals("ThumbnailUrl",photo.getThumbnailUrl());
+		assertEquals("Photo [albumId=1, id=2, title=Cat, url=urlString, thumbnailUrl=ThumbnailUrl]", photo.toString());
+				
+
+	}
+
+	@Test
+	void testToStringr() {
+		Photo photo = new Photo(1,2,"Cat","urlString","ThumbnailUrl");
+		assertEquals("Photo [albumId=1, id=2, title=Cat, url=urlString, thumbnailUrl=ThumbnailUrl]", photo.toString());
+				
+
+	}
+	@Test
+	void testToConsoleResults() {
+		Photo photo = new Photo(1,2,"Cat","urlString","ThumbnailUrl");
+		
+		assertEquals("[2] Cat", photo.toConsoleResults());		
+
+	}
 }
