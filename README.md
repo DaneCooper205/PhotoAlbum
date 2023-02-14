@@ -1,3 +1,14 @@
+This is a standard Java Console Application. It was coded using Spring Boot since the libraries 
+are easliy accessible. 
+
+If an IDE is not used, the program may be compiled using 
+- mvn clean install
+
+Then it is run using 
+- java -jar photoalbum-0.0.1-SNAPSHOT.jar 3 ( 3 is the number of the album desired)
+
+
+
 # PhotoAlbum
 <p>Create a console application that displays photo ids and titles in an album. The photos are available in this online web 
 service: https://jsonplaceholder.typicode.com/photos</p>
